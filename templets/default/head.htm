@@ -1,0 +1,27 @@
+<div class="header">
+  <div class="wrap">
+    <div class="navbar navbar_ clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="logo"><a href="/"><img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}" /></a></div>
+          </div>
+          <div class="span8">
+            <nav id="main_menu">
+              <div class="menu_wrap">
+                <ul class="nav sf-menu sf-js-enabled">
+                  <li><a href="/">首页</a></li>
+                  {dede:channel type='top' row='10' currentstyle="
+                  <li class='current'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+                  "}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

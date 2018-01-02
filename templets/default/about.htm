@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<script type="text/javascript" src="/skin/js/jquery.1.8.2.min.js"></script>
+<link href="/skin/css/bootstrap.css" rel="stylesheet">
+<link href="/skin/css/theme.css" rel="stylesheet">
+<link rel="stylesheet" id="camera-css"  href="/skin/css/camera.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="/skin/css/skin.css" />
+<link href="/skin/css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="/skin/js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--header--> 
+{dede:include filename="head.htm"/} 
+<!--//header--> 
+<!--page_container-->
+<div class="page_container">
+  <div class="breadcrumb">
+    <div class="wrap">
+      <div class="container"> {dede:field name='position'/} </div>
+    </div>
+  </div>
+  <div class="container about-info"> {dede:field.content/} </div>
+</div>
+<!--//page_container--> 
+
+<!--footer--> 
+{dede:include filename="footer.htm"/} 
+<!--//footer--> 
+<script src="/skin/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<a class="gray" href="[field:typelink/]"><<返回</a>

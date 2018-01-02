@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("global","",77,103);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",147,177);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",214,241);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("global","",1090,1116);
+$z[3][4]['name']="cfg_webname";
+$z[4]=Array("channel","\r\n                  <li><a href=\"[field:typeurl/]\">[field:typename/]</a></li>\r\n                  ",1395,1674);
+$z[4][4]['type']="top";
+$z[4][4]['row']="10";
+$z[4][4]['currentstyle']="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>";
+$z[5]=Array("global","",4053,4079);
+$z[5][4]['name']="cfg_webname";
+$z[6]=Array("global","",4203,4229);
+$z[6][4]['name']="cfg_webname";
+$z[7]=Array("global","",4352,4378);
+$z[7][4]['name']="cfg_webname";
+$z[8]=Array("global","",4501,4527);
+$z[8][4]['name']="cfg_webname";
+$z[9]=Array("global","",4650,4676);
+$z[9][4]['name']="cfg_webname";
+$z[10]=Array("global","",4799,4825);
+$z[10][4]['name']="cfg_webname";
+$z[11]=Array("sql"," \r\n            [field:content  function='cn_substr(html2text(@me),1000)'/]\r\n            ",5178,5337);
+$z[11][4]['sql']="Select content from dede_arctype where id=1";
+$z[12]=Array("arclist","\r\n            <li>\r\n              <div class=\"news_date\">[field:pubdate function=\"MyDate('m/d',@me)\"/]<span>[field:pubdate function=\"MyDate('Y',@me)\"/]</span></div>\r\n              <div class=\"news_t\"><a href=\"[field:arcurl/]\">[field:title/]</a></div>\r\n              <div class=\"news\">[field:description function='cn_substr(@me,30)'/]</div>\r\n              <div class=\"news_info\">[field:info/]...\r\n                <p><a href=\"[field:arcurl/]\">了解更多...</a></p>\r\n              </div>\r\n              <div class=\"clear\"></div>\r\n            </li>\r\n            ",5574,6215);
+$z[12][4]['row']="2";
+$z[12][4]['titlelen']="32";
+$z[12][4]['infolen']="100";
+$z[12][4]['typeid']="4";
+$z[12][4]['flag']="c";
+$z[13]=Array("arclist","\r\n            <li>\r\n              <div class=\"post_carousel\"> <img src=\"[field:picname/]\" alt=\"[field:title/]\" />\r\n                <div class=\"title_t\"><a href=\"[field:arcurl/]\">[field:title/]</a></div>\r\n                <div class=\"post_meta\"> [field:info/]...</div>\r\n                <p><a href=\"[field:arcurl/]\" class=\"arrow_link\">了解更多...</a></p>\r\n              </div>\r\n            </li>\r\n            ",6580,7073);
+$z[13][4]['row']="8";
+$z[13][4]['titlelen']="32";
+$z[13][4]['infolen']="180";
+$z[13][4]['typeid']="4";
+$z[13][4]['noflag']="c";
+$z[14]=Array("include","",7222,7259);
+$z[14][4]['filename']="footer.htm";
+
+?>

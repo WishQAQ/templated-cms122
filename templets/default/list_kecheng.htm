@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<script type="text/javascript" src="/skin/js/jquery.1.8.2.min.js"></script>
+<link href="/skin/css/bootstrap.css" rel="stylesheet">
+<link href="/skin/css/theme.css" rel="stylesheet">
+<link rel="stylesheet" id="camera-css"  href="/skin/css/camera.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="/skin/css/skin.css" />
+<link href="/skin/css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="/skin/js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--header--> 
+{dede:include filename="head.htm"/} 
+<!--//header--> 
+<!--page_container-->
+<div class="page_container">
+  <div class="breadcrumb">
+    <div class="wrap">
+      <div class="container"> {dede:field name='position'/} </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="container">
+      <div class="curriculumBox">
+        <ul class="navTab clearfix">
+          <li class="active " _id="#couse_1"><a href="javascript:;">团 操</a></li>
+          <li class=" " _id="#couse_2"><a href="javascript:;">瑜 伽</a></li>
+          <li class=" " _id="#couse_3"><a href="javascript:;">莱 美</a></li>
+        </ul>
+        <div class="courseListBox activeCourse " id="couse_1">
+          <div class="row clearfix">
+            <div class="span4">
+              <h3 class="week">星期五(2015-10-16)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                  <tr>
+                    <th>16:00-17:00</th>
+                    <td> --</td>
+                  </tr>
+                  <tr>
+                    <th>17:10-18:10</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>20:05-21:05</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期六(2015-10-17)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='4'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>20:05-21:05</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期日(2015-10-18)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>17:10-18:10</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>20:05-21:05</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期一(2015-10-19)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='5'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期二(2015-10-20)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='4'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>17:10-18:10</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期三(2015-10-21)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                  <tr>
+                    <th>18:20-18:50</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='4'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期四(2015-10-22)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='4'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>17:10-18:10</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="courseListBox  " id="couse_2">
+          <div class="row clearfix">
+            <div class="span4">
+              <h3 class="week">星期五(2015-10-16)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                  <tr>
+                    <th>12:30-13:30</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='4'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>20:00-21:00</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期六(2015-10-17)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='3'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>15:30-16:30</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>16:40-17:40</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>20:00-21:00</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期日(2015-10-18)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                  <tr>
+                    <th>12:30-13:30</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='4'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期一(2015-10-19)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>15:30-16:30</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>16:40-17:40</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期二(2015-10-20)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>10:00-11:00</th>
+                    <td> --</td>
+                  </tr>
+                  <tr>
+                    <th>12:30-13:30</th>
+                    <td> --</td>
+                  </tr>
+                {dede:list pagesize='3'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期三(2015-10-21)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='3'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>16:40-17:40</th>
+                  <td> --</td>
+                </tr>
+                <tr>
+                  <th>20:00-21:00</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期四(2015-10-22)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                <tr>
+                  <th>12:30-13:30</th>
+                  <td> --</td>
+                </tr>
+                  </tbody>
+                
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="courseListBox  " id="couse_3">
+          <div class="row clearfix">
+            <div class="span4">
+              <h3 class="week">星期五(2015-10-16)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期六(2015-10-17)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>19:00-19:45</th>
+                    <td> --</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期日(2015-10-18)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期一(2015-10-19)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期二(2015-10-20)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期三(2015-10-21)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+                {dede:list pagesize='2'}
+                <tr>
+                  <th>18:20-18:50</th>
+                  <td><a href="[field:arcurl/]">[field:title/]</a></td>
+                </tr>
+                {/dede:list}
+                  </tbody>
+                
+              </table>
+            </div>
+            <div class="span4">
+              <h3 class="week">星期四(2015-10-22)</h3>
+              <table class="table table-striped">
+                <colgroup>
+                <col width="100" />
+                <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>时间</th>
+                    <th>课程</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>19:00-19:45</th>
+                    <td> --</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+                    $('.navTab li').click(function () {
+                        var id = $(this).attr('_id');
+                        $(this).addClass('active').siblings().removeClass('active');
+                        $(id).addClass('activeCourse').siblings('.courseListBox').removeClass('activeCourse');
+                    });    
+                </script> 
+    </div>
+  </div>
+</div>
+<!--//page_container--> 
+
+<!--footer--> 
+{dede:include filename="footer.htm"/} 
+<!--//footer--> 
+<script src="/skin/js/bootstrap.js"></script>
+</body>
+</html>

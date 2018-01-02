@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by www.dede58.com" />
+<script type="text/javascript" src="/skin/js/jquery.1.8.2.min.js"></script>
+<link href="/skin/css/bootstrap.css" rel="stylesheet">
+<link href="/skin/css/theme.css" rel="stylesheet">
+<link rel="stylesheet" id="camera-css"  href="/skin/css/camera.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="/skin/css/skin.css" />
+<link href="/skin/css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="/skin/js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--header-->
+<div class="header">
+  <div class="wrap">
+    <div class="navbar navbar_ clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="logo"><a href="/"><img src="/skin/images/logo.png" alt="{dede:global.cfg_webname/}" /></a></div>
+          </div>
+          <div class="span8">
+            <nav id="main_menu">
+              <div class="menu_wrap">
+                <ul class="nav sf-menu sf-js-enabled">
+                  <li class="current"><a href="/">首页</a></li>
+                  {dede:channel type='top' row='10' currentstyle="
+                  <li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>
+                  "}
+                  <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+                  {/dede:channel}
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--//header--> <!--page_container-->
+<div class="page_container"> 
+  <!--slider-->
+  <div id="main_slider">
+    <div class="camera_wrap" id="camera_wrap_1">
+      <div data-src="/skin/images/1.jpg"></div>
+      <div data-src="/skin/images/2.jpg"></div>
+    </div>
+    <!-- #camera_wrap_1 -->
+    <div class="clear"></div>
+  </div>
+  <!--//slider--> 
+  
+  <!--planning-->
+  <div class="wrap planning">
+    <div class="container">
+      <div class="row">
+        <div class="span4"> <a> <span class="img_icon icon1"></span> <span class="link_title">高端器材</span>
+          <p>俱乐部配备力健、星驰等国际著名品牌的健身和测试设备，为会员提供安全可靠的健身设备和科学系统的功能测试仪器</p>
+          </a> </div>
+        <div class="span4"> <a > <span class="img_icon icon4"></span> <span class="link_title">专业教练</span>
+          <p>拥有一大批高水平、高素质的教练队伍和管理团队，以认真负责恭谦有礼的态度，为大家提供无微不至的热忱服务</p>
+          </a> </div>
+        <div class="span4"> <a > <span class="img_icon icon3"></span> <span class="link_title">尊贵服务</span>
+          <p>一对一人性化服务，VIP量身定做，你的要求就是我们的追求，你的满意就是我们的心愿</p>
+          </a> </div>
+      </div>
+    </div>
+  </div>
+  <!--//planning--> 
+  
+  <!--Welcome--> 
+  <!--<div class="wrap block">
+            <div class="container welcome_block">
+            	<div class="welcome_line welcome_t"></div>
+                <span>站窝窝健身，<font color=#d00b01>6月9日</font>正式开业</span>
+            	VIP会员年卡超低折扣预售中，购卡热线：0592-2282828
+                <div class="welcome_line welcome_b"></div>
+            </div>
+        </div>--> 
+  <!--//Welcome--> 
+  
+  <!--featured works-->
+  <div class="wrap block carousel_block">
+    <div class="container">
+      <h2 class="upper">健身展示</h2>
+      <div class="row">
+        <div class="span12">
+          <ul id="mycarousel" class="jcarousel-skin-tango">
+            <li>
+              <div class="hover_img"> <img src="/skin/images/11.jpg" alt="{dede:global.cfg_webname/}" /> </div>
+            </li>
+            <li>
+              <div class="hover_img"> <img src="/skin/images/22.jpg" alt="{dede:global.cfg_webname/}" /> </div>
+            </li>
+            <li>
+              <div class="hover_img"> <img src="/skin/images/3.jpg" alt="{dede:global.cfg_webname/}" /> </div>
+            </li>
+            <li>
+              <div class="hover_img"> <img src="/skin/images/4.jpg" alt="{dede:global.cfg_webname/}" /> </div>
+            </li>
+            <li>
+              <div class="hover_img"> <img src="/skin/images/5.jpg" alt="{dede:global.cfg_webname/}" /> </div>
+            </li>
+            <li>
+              <div class="hover_img"> <img src="/skin/images/6.jpg" alt="{dede:global.cfg_webname/}" /> </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//featured works--> 
+  
+  <!--Latest news-->
+  <div class="wrap block">
+    <div class="container">
+      <div class="row news_block">
+        <div class="span6">
+          <h2 class="title">站窝窝健身--即将开业</h2>
+          <p>{dede:sql sql='Select content from dede_arctype where id=1'} 
+            [field:content  function='cn_substr(html2text(@me),1000)'/]
+            {/dede:sql}</p>
+          <p><a href="/a/guanyuwomen/">了解更多...</a></p>
+        </div>
+        <div class="span6">
+          <h2 class="title">健身动态</h2>
+          <ul id="newscarousel" class="jcarousel-skin-tango">
+            {dede:arclist row=2 titlelen=32 infolen='100' typeid='4' flag='c'}
+            <li>
+              <div class="news_date">[field:pubdate function="MyDate('m/d',@me)"/]<span>[field:pubdate function="MyDate('Y',@me)"/]</span></div>
+              <div class="news_t"><a href="[field:arcurl/]">[field:title/]</a></div>
+              <div class="news">[field:description function='cn_substr(@me,30)'/]</div>
+              <div class="news_info">[field:info/]...
+                <p><a href="[field:arcurl/]">了解更多...</a></p>
+              </div>
+              <div class="clear"></div>
+            </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Latest news--> 
+  
+  <!--latest posts-->
+  <div class="wrap block carousel_block">
+    <div class="container">
+      <h2 class="upper">新闻动态</h2>
+      <div class="row">
+        <div class="span12">
+          <ul id="mycarousel2" class="jcarousel-skin-tango">
+            {dede:arclist row=8 titlelen=32 infolen='180' typeid='4' noflag='c'}
+            <li>
+              <div class="post_carousel"> <img src="[field:picname/]" alt="[field:title/]" />
+                <div class="title_t"><a href="[field:arcurl/]">[field:title/]</a></div>
+                <div class="post_meta"> [field:info/]...</div>
+                <p><a href="[field:arcurl/]" class="arrow_link">了解更多...</a></p>
+              </div>
+            </li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//latest posts--> 
+</div>
+<!--//page_container--> 
+
+<!--footer--> 
+{dede:include filename="footer.htm"/} 
+<!--//footer--> 
+<script src="/skin/js/bootstrap.js"></script> <script type="text/javascript" src="/skin/js/jquery.jcarousel.js"></script> 
+<script type="text/javascript" src="/skin/js/camera.js"></script> 
+<script type="text/javascript">
+        $(document).ready(function () {
+            //Slider
+            $('#camera_wrap_1').camera();
+			//Featured works & latest posts
+			$('#mycarousel, #mycarousel2, #newscarousel').jcarousel();			
+		});		
+	</script>
+</body>
+</html>
